@@ -98,7 +98,7 @@ body {
 }
 
 .create-btn {
-  background-color: #8a2a56;
+  background-color: rgb(138, 42, 86);
   color: white;
   border: none;
   padding: 8px 12px;
@@ -150,13 +150,13 @@ table th {
 }
 
 .status.rejected {
-  color: red;
+  color: rgb(194, 0, 0);
 }
 
 .status.in-review {
-  color: orange;
+  color: rgb(0,0,0);
 }
 
 .status.requires-details {
-  color: blue;
+  color: rgb(0, 0, 219);
 }
