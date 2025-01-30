@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Incidencias</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img width="120px" src="Bykon_logo.png" alt=""></div>
+    <div class="header-title">Sistema de incidencias</div>
+    <!-- <div class="user-info">Hola, Martha Noemi <span class="dropdown">▼</span></div> -->
+
+    <div class="user-info">
+      Hola, Martha Noemi
+      <span class="dropdown">▼</span>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+      </ul>
+  </div>
+
+  </header>
+
+  <main class="main-content">
+    <div class="filters">
+      <img width="35px" src="Filter.png" alt="">
+      <input type="text" placeholder="Buscar incidencia" class="search-bar">
+      <select class="filter">
+        <option>Año</option>
+        <option>2025</option>
+        <option>2024</option>
+      </select>
+      <select class="filter">
+        <option>Tipo</option>
+        <option>Falta</option>
+        <option>Retardo</option>
+        <option>Permiso</option>
+        <option>Capacitación</option>
+        <option>Horas extra</option>
+        <option>Problema técnico</option>
+      </select>
+      <select class="filter">
+        <option>Estado
+          <!-- <img src="Info.png" alt=""> -->
+        </option>
+        <option>Aprobado</option>
+        <option>Rechazado</option>
+        <option>En revisión</option>
+        <option>Requiere más detalles</option>
+      </select>
+    </div>
+
+    <div class="create-btn-section">
+      <button class="create-btn">
+        <div class= "create-btn-text">
+          <div>
+            <span style="font-size: x-large;">+</span>
+          </div>
+          <div style="padding: 7px;">
+            Crear
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <section class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Días</th>
+            <th>Tipo</th>
+            <th>Descripción</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>27/12/2024</td>
+            <td>1</td>
+            <td>Falta</td>
+            <td>Ausencia por accidente antes de llegar al trabajo</td>
+            <td class="status approved">Aprobado</td>
+          </tr>
+          <tr>
+            <td>28/01/2025</td>
+            <td>1</td>
+            <td>Retardo</td>
+            <td>Llegada tarde porque el metro se descompuso</td>
+            <td class="status rejected">Rechazado</td>
+          </tr>
+          <tr>
+            <td>29/01/2025</td>
+            <td>1</td>
+            <td>Permiso</td>
+            <td>Consulta con el otorrinolaringólogo</td>
+            <td class="status approved">Aprobado</td>
+          </tr>
+          <tr>
+            <td>29/01/2025 - 31/01/2025</td>
+            <td>3</td>
+            <td>Capacitación</td>
+            <td>Curso de Flutter</td>
+            <td class="status in-review">En revisión</td>
+          </tr>
+          <tr>
+            <td>29/01/2025</td>
+            <td>1</td>
+            <td>Horas extra</td>
+            <td>1 hora por release</td>
+            <td class="status approved">Aprobado</td>
+          </tr>
+          <tr>
+            <td>29/01/2025</td>
+            <td>1</td>
+            <td>Problema técnico</td>
+            <td>Contraseña bloqueada por límite de intentos</td>
+            <td class="status requires-details">Requiere más detalles</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
